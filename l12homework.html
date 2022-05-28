@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home Work</title>
+	<style type="text/css">
+		*{
+			perspective: 600px;
+		}
+		body{
+			height: 100vh;
+
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.container{
+			width: 500px;
+			background: #e5e5e5;
+		}
+
+		.div1{
+			width: 300px;
+			height: 150px;
+			background: linear-gradient(black,silver);
+			border: 1px solid black;
+			box-shadow: -5px 0 5px rgba(0,0,0,0.5);
+
+			margin: auto;
+			padding: 5px;
+
+			position: relative;
+		}
+
+		.div2{
+			width: 300px;
+			height: 150px;
+			background: linear-gradient(black,silver);
+			border: 1px solid black;
+			box-shadow: -5px 0 5px rgba(0,0,0,0.5);
+
+			margin: auto;
+			padding: 20px;
+
+			transform: rotateX(45deg);
+
+			position: absolute;
+			top:-50%;
+			left: -5%;
+
+			z-index: 1;
+		}
+
+		.div3,.div4{
+			width: 50px;
+			height: 100px;
+			background-color: #fff;
+
+			border: 1px solid #000;
+			box-shadow: -5px 0 5px rgba(0,0,0,0.5);
+
+			position: absolute;
+
+			transition: transform 1s;
+		}
+
+		.div3{
+			bottom: 0;
+			left: 106px;
+
+			transform: rotateY(0deg);
+						transform-origin: left;
+		}
+
+		.div4{
+			bottom: 0;
+			left: 157px;
+
+			transform: rotateY(55deg);
+			transform-origin: right;
+
+		}
+
+		.div4:hover{
+			transform: rotateY(0deg);
+		}
+
+		.div3:hover{
+			transform: rotateY(-55deg);
+
+
+		}
+
+
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="div1">div1
+			<div class="div2">div2
+			</div>
+			<div class="div3">div3
+			</div>
+			<div class="div4">div4
+			</div>
+		</div>
+		<b>WDF 5368</b>
+	</div>
+</body>
+</html>
